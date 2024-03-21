@@ -26,15 +26,39 @@
 };
 
 / {
+    behaviors {
+        home_mods_l: home_mods_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_MODS_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <6 7 9 8 10 11 23 18 19 20 21 22 30 31 32 33 34 39 40 41 34 35>;
+        };
+
+        home_mods_r: home_mods_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_MODS_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&mt LGUI RBKT    &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y        &kp U           &kp I        &kp O    &kp P     &kp LBKT
-&mt LCTRL GRAVE  &kp A  &kp S  &kp D        &kp F            &kp G        &kp H        &kp J           &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LALT MINUS   &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N        &kp M           &kp COMMA    &kp DOT  &kp FSLH  &mt RALT BSLH
-                               &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC  &lt RSE DEL
+&mt LGUI RBKT    &kp Q                 &kp W                    &kp E                        &kp R                      &kp T        &kp Y        &kp U                       &kp I                     &kp O                     &kp P                         &kp LBKT
+&mt LCTRL GRAVE  &home_mods_l LCTRL A  &home_mods_l LEFT_ALT S  &home_mods_l LEFT_COMMAND D  &home_mods_l LEFT_SHIFT F  &kp G        &kp H        &home_mods_r RIGHT_SHIFT J  &home_mods_r RIGHT_GUI K  &home_mods_r RIGHT_ALT L  &home_mods_r RCTRL SEMICOLON  &mt RCTRL SQT
+&mt LALT MINUS   &kp Z                 &kp X                    &kp C                        &kp V                      &kp B        &kp N        &kp M                       &kp COMMA                 &kp DOT                   &kp FSLH                      &mt RALT BSLH
+                                                                &lt RSE TAB                  &mt LSHFT SPACE            &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC              &lt RSE DEL
             >;
         };
 
