@@ -66,16 +66,16 @@
             bindings = <
 &mt LGUI F1     &kp F2    &kp F3  &kp F4       &kp F5    &kp F6     &kp F7     &kp F8    &kp F9       &kp F10   &kp F11   &kp F12
 &mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH     &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&mt LALT EQUAL  &kp N1    &kp N2  &kp N3       &kp N4    &kp N5     &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &kp RALT
+&mt LALT EQUAL  &none     &none   &none        &none     &none      &none      &none     &none        &none     &none     &kp RALT
                                   &lt ADJ TAB  &trans    &trans     &trans     &trans    &lt ADJ DEL
             >;
         };
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP    &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_BRIGHTNESS_INC  &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS               &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN    &kp END         &trans     &kp PG_DN  &kp C_BRIGHTNESS_DEC  &kp RALT
+&mt LGUI KP_NUM  &none            &kp KP_N7  &kp KP_N8  &kp KP_N9  &none         &kp C_VOL_UP    &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_BRIGHTNESS_INC  &kp CLCK
+&mt LCTRL EQUAL  &none            &kp KP_N4  &kp KP_N5  &kp KP_N6  &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS               &mt RCTRL K_APP
+&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &none         &kp C_VOL_DN    &kp END         &trans     &kp PG_DN  &kp C_BRIGHTNESS_DEC  &kp RALT
                                              &trans     &trans     &lt ADJ RET   &lt ADJ ESC     &trans          &trans
             >;
         };
