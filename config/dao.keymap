@@ -51,11 +51,11 @@
     };
 
     macros {
-        hashrocket: new_macro {
+        hashrocket: hashrocket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
-            label = "NEW_MACRO";
+            label = "HASHROCKET";
         };
     };
 
