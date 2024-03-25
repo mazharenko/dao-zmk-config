@@ -50,6 +50,15 @@
         };
     };
 
+    macros {
+        hashrocket: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -64,19 +73,19 @@
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &none     &kp F7  &kp F8    &kp F9    &kp F10    &kp EXCL   &kp AT    &kp HASH     &kp DLLR  &kp PRCNT &none
-&mt LCTRL PLUS  &none     &kp F4  &kp F5    &kp F6    &kp F11    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&mt LALT EQUAL  &none     &kp F1  &kp F2    &kp F3    &kp F12    &none      &none     &none        &none     &none     &kp RALT
-                                  &lt ADJ TAB  &trans    &trans     &trans     &trans    &lt ADJ DEL
+&mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp EXCL   &kp AT    &kp HASH     &kp DLLR     &kp PRCNT  &none
+&mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &kp CARET  &kp AMPS  &kp STAR     &kp LPAR     &kp RPAR   &mt RCTRL MINUS
+&mt LALT EQUAL  &none  &kp F1  &kp F2       &kp F3  &kp F12  &none      &none     &none        &hashrocket  &none      &kp RALT
+                               &lt ADJ TAB  &trans  &trans   &trans     &trans    &lt ADJ DEL
             >;
         };
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &none            &kp KP_N7  &kp KP_N8  &kp KP_N9  &none         &kp C_VOL_UP    &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_BRIGHTNESS_INC  &kp CLCK
-&mt LCTRL EQUAL  &none            &kp KP_N4  &kp KP_N5  &kp KP_N6  &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS               &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &none         &kp C_VOL_DN    &kp END         &trans     &kp PG_DN  &kp C_BRIGHTNESS_DEC  &kp RALT
-                                             &trans     &trans     &lt ADJ RET   &lt ADJ ESC     &trans          &trans
+&mt LGUI KP_NUM  &none      &kp KP_N7  &kp KP_N8  &kp KP_N9  &none        &kp C_VOL_UP    &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_BRIGHTNESS_INC  &kp CLCK
+&mt LCTRL EQUAL  &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS               &mt RCTRL K_APP
+&kp LALT         &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &none        &kp C_VOL_DN    &kp END         &trans     &kp PG_DN  &kp C_BRIGHTNESS_DEC  &kp RALT
+                                       &trans     &trans     &lt ADJ RET  &lt ADJ ESC     &trans          &trans
             >;
         };
 
