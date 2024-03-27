@@ -91,10 +91,10 @@
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &none      &kp KP_N7  &kp KP_N8  &kp KP_N9  &none        &kp C_VOL_UP    &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_BRIGHTNESS_INC  &kp CLCK
-&mt LCTRL EQUAL  &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS               &mt RCTRL K_APP
-&kp LALT         &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &none        &kp C_VOL_DN    &kp END         &trans     &kp PG_DN  &kp C_BRIGHTNESS_DEC  &kp RALT
-                                       &trans     &trans     &lt ADJ RET  &lt ADJ ESC     &trans          &trans
+&mt LGUI KP_NUM  &none      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &kp HOME        &kp PG_UP  &none      &none    &kp CLCK
+&mt LCTRL EQUAL  &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_MUTE    &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS  &mt RCTRL K_APP
+&kp LALT         &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp C_VOL_DN  &kp C_BRIGHTNESS_DEC  &kp END         &kp PG_DN  &none      &none    &kp RALT
+                                       &trans     &trans     &lt ADJ RET   &lt ADJ ESC           &trans          &trans
             >;
         };
 
