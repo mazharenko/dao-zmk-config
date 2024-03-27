@@ -55,7 +55,7 @@
             bindings = <&kp BSLH>, <&kp GRAVE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
