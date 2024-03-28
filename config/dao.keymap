@@ -26,6 +26,18 @@
 };
 
 / {
+    charmap_uni: charmap_uni {
+        compatible = "zmk,character-map";
+        behavior = <&kp>;
+        map = 
+            <0x28 N9> // (
+            , <0x29 N0> // )
+            ;
+    };
+}
+
+
+/ {
     behaviors {
         home_mods_l: home_mods_l {
             compatible = "zmk,behavior-hold-tap";
@@ -64,6 +76,13 @@
             #binding-cells = <0>;
             text = "=>";
         };
+
+        ZMK_SEND_STRING(uni_LEFT_PARENTHESIS, "("
+            charmap = <&charmap_uni>;
+        );
+        ZMK_SEND_STRING(uni_RIGHT_PARENTHESIS, ")"
+            charmap = <&charmap_uni>;
+        );
     };
 
     keymap {
@@ -82,7 +101,7 @@
             bindings = <
 &mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp N1  &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp N4      &kp N5  &none
 &mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &kp N6  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp N7      &kp N8  &mt RCTRL MINUS
-&mt LALT EQUAL  &none  &kp F1  &kp F2       &kp F3  &kp F12  &kp N2  &kp N9                    &kp N0                     &hashocket  &kp N3  &kp RALT
+&mt LALT EQUAL  &none  &kp F1  &kp F2       &kp F3  &kp F12  &kp N2  &uni_LEFT_PARENTHESIS     &uni_RIGHT_PARENTHESIS     &hashocket  &kp N3  &kp RALT
                                &lt ADJ TAB  &trans  &trans   &trans  &trans                    &lt ADJ DEL
             >;
         };
