@@ -77,10 +77,10 @@
             text = "=>";
         };
 
-        ZMK_SEND_STRING(uni_LEFT_PARENTHESIS, "("
+        ZMK_SEND_STRING(uni_LEFT_PARENTHESIS, "(",
             charmap = <&charmap_uni>;
         );
-        ZMK_SEND_STRING(uni_RIGHT_PARENTHESIS, ")"
+        ZMK_SEND_STRING(uni_RIGHT_PARENTHESIS, ")",
             charmap = <&charmap_uni>;
         );
     };
