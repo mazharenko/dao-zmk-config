@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: zmk-send-string
+      url-base: https://github.com/joelspadin
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: zmk-send-string
+      revision: send-string-behavior
       import: app/west.yml
   self:
     path: config
