@@ -83,7 +83,7 @@
         lower_layer {
             bindings = <
 &mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp N1  &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp N4       &kp N5  &none
-&mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &kp N6  &kp LA(LEFT_BRACKET)      &kp LA(RIGHT_BRACKET)      &kp N7       &kp N8  &mt RCTRL MINUS
+&mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &kp N6  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp N7       &kp N8  &mt RCTRL MINUS
 &mt LALT EQUAL  &none  &kp F1  &kp F2       &kp F3  &kp F12  &kp N2  &kp N9                    &kp N0                     &hashrocket  &kp N3  &kp RALT
                                &lt ADJ TAB  &trans  &trans   &trans  &trans                    &lt ADJ DEL
             >;
