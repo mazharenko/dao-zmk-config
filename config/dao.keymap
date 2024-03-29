@@ -83,10 +83,10 @@
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp EXCLAMATION  &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp SEMICOLON   &kp PERCENT   &none
-&mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &kp COLON    &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION        &kp ASTERISK  &mt RCTRL MINUS
+&mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp EXCLAMATION  &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp UNI_SEMICOLON   &kp PERCENT   &none
+&mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &kp UNI_COLON    &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION        &kp ASTERISK  &mt RCTRL MINUS
 &mt LALT EQUAL  &none  &kp F1  &kp F2       &kp F3  &kp F12  &kp AT           &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket         &kp HASH      &kp RALT
-                               &lt ADJ TAB  &trans  &trans   &trans  &trans                    &lt ADJ DEL
+                               &lt ADJ TAB  &trans  &trans   &trans           &trans                    &lt ADJ DEL
             >;
         };
 
