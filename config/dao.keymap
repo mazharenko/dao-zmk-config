@@ -93,14 +93,14 @@
             bindings = <
 &mt LGUI RBKT    &kp Q                 &kp W                    &kp E                        &kp R                      &kp T        &kp Y        &kp U                       &kp I                     &kp O                    &kp P                         &kp GLOBE
 &mt LCTRL GRAVE  &home_mods_l LCTRL A  &home_mods_l LEFT_ALT S  &home_mods_l LEFT_COMMAND D  &home_mods_l LEFT_SHIFT F  &kp G        &kp H        &home_mods_r RIGHT_SHIFT J  &home_mods_r RIGHT_GUI K  &home_mods_r LEFT_ALT L  &home_mods_r RCTRL SEMICOLON  &quotes
-&mt LALT MINUS   &kp Z                 &kp X                    &kp C                        &kp V                      &kp B        &kp N        &kp M                       &kp COMMA                 &kp DOT                  &kp FSLH                      &mt RALT SINGLE_QUOTE
+&mt LALT MINUS   &kp Z                 &kp X                    &kp C                        &kp V                      &kp B        &kp N        &kp M                       &kp COMMA                 &kp DOT                  &slashes                      &mt RALT SINGLE_QUOTE
                                                                 &lt RSE TAB                  &kp SPACE                  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC              &lt RSE DEL
             >;
         };
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &slashes          &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
+&mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp SLASH         &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
 &mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &semicolon_colon  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION  &kp ASTERISK  &mt RCTRL MINUS
 &mt LALT EQUAL  &none  &kp F1  &kp F2       &kp F3  &kp F12  &kp AT            &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket   &kp HASH      &kp RALT
                                &lt ADJ TAB  &trans  &trans   &trans            &trans                    &lt ADJ DEL
