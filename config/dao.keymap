@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SLASHES";
             #binding-cells = <0>;
-            bindings = <&kp LS(SLASH)>, <&kp LS(SEMI)>, <&kp LS(SINGLE_QUOTE)>;
+            bindings = <&kp LS(BSLH)>, <&kp LS(SEMI)>, <&kp LS(SINGLE_QUOTE)>;
         };
     };
 
