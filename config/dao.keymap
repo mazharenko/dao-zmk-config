@@ -52,21 +52,17 @@
         };
 
         quotes: quotes {
-            compatible = "zmk,behavior-mod-morph";
+            compatible = "zmk,behavior-tap-dance";
             label = "QUOTES";
             bindings = <&kp BSLH>, <&kp GRAVE>;
-
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         semicolon_colon: semicolon_colon {
-            compatible = "zmk,behavior-mod-morph";
+            compatible = "zmk,behavior-tap-dance";
             label = "SEMICOLON_COLON";
             bindings = <&kp UNI_SEMICOLON>, <&kp UNI_COLON>;
-
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         slashes: slashes {
