@@ -87,27 +87,27 @@
 
         default_layer {
             bindings = <
-&mt LGUI RBKT  &kp Q                 &kp W                    &kp E                        &kp R                      &kp T        &kp Y        &kp U                       &kp I                     &kp O                    &kp P                         &kp LBKT
+&kp RBKT       &kp Q                 &kp W                    &kp E                        &kp R                      &kp T        &kp Y        &kp U                       &kp I                     &kp O                    &kp P                         &kp LBKT
 &kp MINUS      &home_mods_l LCTRL A  &home_mods_l LEFT_ALT S  &home_mods_l LEFT_COMMAND D  &home_mods_l LEFT_SHIFT F  &kp G        &kp H        &home_mods_r RIGHT_SHIFT J  &home_mods_r RIGHT_GUI K  &home_mods_r LEFT_ALT L  &home_mods_r RCTRL SEMICOLON  &quotes
-&kp F13        &kp Z                 &kp X                    &kp C                        &kp V                      &kp B        &kp N        &kp M                       &kp COMMA                 &kp DOT                  &slashes                      &mt RALT SINGLE_QUOTE
-                                                              &lt RSE TAB                  &kp SPACE                  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC              &lt RSE DEL
+&kp F13        &kp Z                 &kp X                    &kp C                        &kp V                      &kp B        &kp N        &kp M                       &kp COMMA                 &kp DOT                  &slashes                      &kp SINGLE_QUOTE
+                                                              &lt RSE TAB                  &kp SPACE                  &lt LWR RET  &kp ESC      &mt RSHFT BSPC              &lt RSE DEL
             >;
         };
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp SLASH         &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
-&mt LCTRL PLUS  &none  &kp F4  &kp F5       &kp F6  &kp F11  &semicolon_colon  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION  &kp ASTERISK  &mt RCTRL MINUS
-&mt LALT EQUAL  &none  &kp F1  &kp F2       &kp F3  &kp F12  &kp AT            &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket   &kp HASH      &kp RALT
+&none           &none  &kp F7  &kp F8       &kp F9  &kp F10  &kp SLASH         &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
+&kp PLUS        &none  &kp F4  &kp F5       &kp F6  &kp F11  &semicolon_colon  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION  &kp ASTERISK  &kp MINUS
+&kp EQUAL       &none  &kp F1  &kp F2       &kp F3  &kp F12  &kp AT            &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket   &kp HASH      &none
                                &lt ADJ TAB  &trans  &trans   &trans            &trans                    &lt ADJ DEL
             >;
         };
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &none      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &kp HOME        &kp PG_UP  &none      &none    &kp CLCK
-&mt LCTRL EQUAL  &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_MUTE    &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS  &mt RCTRL K_APP
-&kp LALT         &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp C_VOL_DN  &kp C_BRIGHTNESS_DEC  &kp END         &kp PG_DN  &none      &none    &kp RALT
+&none            &none      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &kp HOME        &kp PG_UP  &none      &none    &kp CLCK
+&kp EQUAL        &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_MUTE    &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS  &none
+&none            &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp C_VOL_DN  &kp C_BRIGHTNESS_DEC  &kp END         &kp PG_DN  &none      &none    &none
                                        &trans     &trans     &lt ADJ RET   &lt ADJ ESC           &trans          &trans
             >;
         };
