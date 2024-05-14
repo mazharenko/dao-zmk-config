@@ -37,7 +37,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 9 8 10 11 23 18 19 20 21 22 30 31 32 33 34 39 40 41 34 35 38 36 38>;
+            hold-trigger-key-positions = <6 7 9 8 10 11 23 18 19 20 21 22 30 31 32 33 34 40 41 34 35 36 37>;
         };
 
         home_mods_r: home_mods_r {
@@ -48,13 +48,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 40 41>;
         };
 
         quotes: quotes {
             compatible = "zmk,behavior-tap-dance";
             label = "QUOTES";
             bindings = <&kp BSLH>, <&kp GRAVE>;
+
             #binding-cells = <0>;
         };
 
@@ -62,6 +63,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SEMICOLON_COLON";
             bindings = <&kp UNI_SEMICOLON>, <&kp UNI_COLON>;
+
             #binding-cells = <0>;
         };
 
@@ -87,28 +89,28 @@
 
         default_layer {
             bindings = <
-&kp RBKT       &kp Q                 &kp W                    &kp E                        &kp R                      &kp T        &kp Y          &kp U                       &kp I                     &kp O                    &kp P                         &kp LBKT
-&kp MINUS      &home_mods_l LCTRL A  &home_mods_l LEFT_ALT S  &home_mods_l LEFT_COMMAND D  &home_mods_l LEFT_SHIFT F  &kp G        &kp H          &home_mods_r RIGHT_SHIFT J  &home_mods_r RIGHT_GUI K  &home_mods_r LEFT_ALT L  &home_mods_r RCTRL SEMICOLON  &kp SINGLE_QUOTE
-&kp F13        &kp Z                 &kp X                    &kp C                        &kp V                      &kp B        &kp N          &kp M                       &kp COMMA                 &kp DOT                  &kp SLASH                     &quotes
-                                                              &lt RSE TAB                  &kp SPACE                  &lt LWR RET  &lt LWR ESC    &kp BSPC              &lt RSE DEL
+&kp RBKT   &kp Q                 &kp W                    &kp E                        &kp R                      &kp T          &kp Y          &kp U                       &kp I                     &kp O                    &kp P                         &kp LBKT
+&kp MINUS  &home_mods_l LCTRL A  &home_mods_l LEFT_ALT S  &home_mods_l LEFT_COMMAND D  &home_mods_l LEFT_SHIFT F  &kp G          &kp H          &home_mods_r RIGHT_SHIFT J  &home_mods_r RIGHT_GUI K  &home_mods_r LEFT_ALT L  &home_mods_r RCTRL SEMICOLON  &kp SINGLE_QUOTE
+&kp F13    &kp Z                 &kp X                    &kp C                        &kp V                      &kp B          &kp N          &kp M                       &kp COMMA                 &kp DOT                  &kp SLASH                     &quotes
+                                                          &lt RSE TAB                  &kp ENTER                  &lt LWR SPACE  &lt LWR SPACE  &kp BSPC                    &lt RSE DEL
             >;
         };
 
         lower_layer {
             bindings = <
-&none        &kp KP_N7  &kp KP_N8    &kp KP_N9       &none       &none    &slashes          &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
-&kp PLUS     &kp KP_N4  &kp KP_N5    &kp KP_N6       &none       &none    &semicolon_colon  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION  &kp ASTERISK  &kp MINUS
-&kp EQUAL    &kp KP_N1  &kp KP_N2    &kp KP_N3       &kp KP_N0   &none    &kp AT            &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket   &kp HASH      &none
-                                     &lt ADJ TAB     &trans      &trans   &trans            &trans                    &lt ADJ DEL
+&none      &kp KP_N7  &kp KP_N8  &kp KP_N9    &none      &none   &slashes          &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
+&kp PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6    &none      &none   &semicolon_colon  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION  &kp ASTERISK  &kp MINUS
+&kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_N0  &none   &kp AT            &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket   &kp HASH      &none
+                                 &lt ADJ TAB  &trans     &trans  &trans            &trans                    &lt ADJ DEL
             >;
         };
 
         raise_layer {
             bindings = <
-&none        &kp F7   &kp F8      &kp F9    &kp F10    &kp C_VOL_UP   &kp C_BRIGHTNESS_INC  &kp HOME        &kp PG_UP  &none      &none    &kp CLCK
-&kp EQUAL    &kp F4   &kp F5      &kp F6    &kp F11    &kp C_MUTE     &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS  &none
-&none        &kp F1   &kp F2      &kp F3    &kp F12    &kp C_VOL_DN   &kp C_BRIGHTNESS_DEC  &kp END         &kp PG_DN  &none      &none    &none
-                                  &trans    &trans     &lt ADJ RET    &lt ADJ ESC           &trans          &trans
+&none      &kp F7  &kp F8  &kp F9  &kp F10  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &kp HOME        &kp PG_UP  &none      &none    &kp CLCK
+&kp EQUAL  &kp F4  &kp F5  &kp F6  &kp F11  &kp C_MUTE    &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS  &none
+&none      &kp F1  &kp F2  &kp F3  &kp F12  &kp C_VOL_DN  &kp C_BRIGHTNESS_DEC  &kp END         &kp PG_DN  &none      &none    &none
+                           &trans  &trans   &lt ADJ RET   &lt ADJ ESC           &trans          &trans
             >;
         };
 
