@@ -96,19 +96,19 @@
 
         lower_layer {
             bindings = <
-&none        &kp F7  &kp F8    &kp F9       &kp F10     &none    &kp SLASH         &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
-&kp PLUS     &kp F4  &kp F5    &kp F6       &kp F11     &none    &semicolon_colon  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION  &kp ASTERISK  &kp MINUS
-&kp EQUAL    &kp F1  &kp F2    &kp F3       &kp F12     &none    &kp AT            &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket   &kp HASH      &none
-                               &lt ADJ TAB  &trans      &trans   &trans            &trans                    &lt ADJ DEL
+&none        &kp KP_N7  &kp KP_N8    &kp KP_N9       &none       &none    &kp SLASH         &kp LS(RA(LEFT_BRACKET))  &kp LS(RA(RIGHT_BRACKET))  &kp EXCL      &kp PERCENT   &none
+&kp PLUS     &kp KP_N4  &kp KP_N5    &kp KP_N6       &none       &none    &semicolon_colon  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp QUESTION  &kp ASTERISK  &kp MINUS
+&kp EQUAL    &kp KP_N1  &kp KP_N2    &kp KP_N3       &kp KP_N0   &none    &kp AT            &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS      &hashrocket   &kp HASH      &none
+                                     &lt ADJ TAB     &trans      &trans   &trans            &trans                    &lt ADJ DEL
             >;
         };
 
         raise_layer {
             bindings = <
-&none        &kp KP_N7  &kp KP_N8  &kp KP_N9    &none       &kp C_VOL_UP   &kp C_BRIGHTNESS_INC  &kp HOME        &kp PG_UP  &none      &none    &kp CLCK
-&kp EQUAL    &kp KP_N4  &kp KP_N5  &kp KP_N6    &none       &kp C_MUTE     &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS  &none
-&none        &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_N0   &kp C_VOL_DN   &kp C_BRIGHTNESS_DEC  &kp END         &kp PG_DN  &none      &none    &none
-                                   &trans       &trans      &lt ADJ RET    &lt ADJ ESC           &trans          &trans
+&none        &kp F7   &kp F8      &kp F9    &kp F10    &kp C_VOL_UP   &kp C_BRIGHTNESS_INC  &kp HOME        &kp PG_UP  &none      &none    &kp CLCK
+&kp EQUAL    &kp F4   &kp F5      &kp F6    &kp F11    &kp C_MUTE     &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP     &kp RIGHT  &kp INS  &none
+&none        &kp F1   &kp F2      &kp F3    &kp F12    &kp C_VOL_DN   &kp C_BRIGHTNESS_DEC  &kp END         &kp PG_DN  &none      &none    &none
+                                  &trans    &trans     &lt ADJ RET    &lt ADJ ESC           &trans          &trans
             >;
         };
 
