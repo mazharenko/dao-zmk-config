@@ -86,7 +86,7 @@
         change_lang: change_lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13 &kp F14>;
+            bindings = <&kp F13 &kp F16>;
             label = "CHANGE_LANG";
         };
     };
